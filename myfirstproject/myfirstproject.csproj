@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D76DDE4E-66FD-423D-9A2F-80F37D9F6BDD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>myfirstproject</RootNamespace>
+    <AssemblyName>myfirstproject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="All_Assignments\Assgn.cs" />
+    <Compile Include="All_Assignments\Assgn17DQ1.cs" />
+    <Compile Include="All_Assignments\AssgnStringQ1.cs" />
+    <Compile Include="All_Assignments\Assgn_3_1.cs" />
+    <Compile Include="All_Assignments\Assignment.cs" />
+    <Compile Include="All_Assignments\HomeWork.cs" />
+    <Compile Include="All_Assignments\ListQ1.cs" />
+    <Compile Include="All_Assignments\TaskArr1.cs" />
+    <Compile Include="All_Assignments\TaskCollectionArrayList1.cs" />
+    <Compile Include="All_Assignments\TaskConditionalSt1.cs" />
+    <Compile Include="All_Assignments\TaskException1.cs" />
+    <Compile Include="All_Assignments\TaskInheritance1.cs" />
+    <Compile Include="All_Assignments\TaskLoops1.cs" />
+    <Compile Include="All_Assignments\TaskStaticCar1.cs" />
+    <Compile Include="All_Assignments\TaskString1.cs" />
+    <Compile Include="Arithmetic_Operation\Addition.cs" />
+    <Compile Include="ArrProgram\Arr1.cs" />
+    <Compile Include="All_Assignments\Assgn3decQ1.cs" />
+    <Compile Include="All_Assignments\Assgn_2D_Que1.cs" />
+    <Compile Include="ArrProgram\Character.cs" />
+    <Compile Include="ArrProgram\Copied_ForeachLoop.cs" />
+    <Compile Include="ArrProgram\Multi_Dimensional_Arr.cs" />
+    <Compile Include="All_Assignments\Que1_Arr.cs" />
+    <Compile Include="ArrProgram\Student_ArrObject.cs" />
+    <Compile Include="CollectionPrograms\HashtableDemo1.cs" />
+    <Compile Include="CollectionPrograms\LinkList1.cs" />
+    <Compile Include="CollectionPrograms\QueueDemo1.cs" />
+    <Compile Include="CollectionPrograms\StackDemo1.cs" />
+    <Compile Include="CollectionPrograms\StructDemo.cs" />
+    <Compile Include="CollectionPrograms\ArrList1.cs" />
+    <Compile Include="CollectionPrograms\CustomList.cs" />
+    <Compile Include="CollectionPrograms\DictionaryList.cs" />
+    <Compile Include="ContainmentProgram\MultilevelProgram.cs" />
+    <Compile Include="DatabyteProgram\Databytes.cs" />
+    <Compile Include="DebuggingProgram\Debug.cs" />
+    <Compile Include="ExceptionPrograms\CustomeExceptionDemo.cs" />
+    <Compile Include="ExceptionPrograms\ExceptionClass1.cs" />
+    <Compile Include="Loops_Conditional\AllLoops.cs" />
+    <Compile Include="Loops_Conditional\ClassTask.cs" />
+    <Compile Include="Loops_Conditional\Condition_Check.cs" />
+    <Compile Include="Loops_Conditional\DemoClass.cs" />
+    <Compile Include="Loops_Conditional\Loops.cs" />
+    <Compile Include="Loops_Conditional\SwitchCase.cs" />
+    <Compile Include="Mini_Project\Operation.cs" />
+    <Compile Include="Mini_Project\Operation2.cs" />
+    <Compile Include="OOPSPrograms\Employee.cs" />
+    <Compile Include="OOPSPrograms\FactUsingInterface.cs" />
+    <Compile Include="OOPSPrograms\IndexerEx.cs" />
+    <Compile Include="OOPSPrograms\NestingMemberFunction.cs" />
+    <Compile Include="OOPSPrograms\ObjectAsParameter.cs" />
+    <Compile Include="OOPSPrograms\ObjectOrientedEx.cs" />
+    <Compile Include="OOPSPrograms\OutKeyword.cs" />
+    <Compile Include="OOPSPrograms\ParameterPassing.cs" />
+    <Compile Include="OOPSPrograms\ParamKeyword.cs" />
+    <Compile Include="OOPSPrograms\Plymorphism.cs" />
+    <Compile Include="OOPSPrograms\Student_Info.cs" />
+    <Compile Include="OOPSPrograms\UseConstantKeyword.cs" />
+    <Compile Include="OOPSPrograms\UseOfThisKeyword.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyPrograms\Car.cs" />
+    <Compile Include="PropertyPrograms\CarInfo.cs" />
+    <Compile Include="PropertyPrograms\StudentD.cs" />
+    <Compile Include="PropertyPrograms\StudentDetaisl.cs" />
+    <Compile Include="PropertyPrograms\Student_1.cs" />
+    <Compile Include="StringPrograms\MutableString.cs" />
+    <Compile Include="StringPrograms\StringBehavior.cs" />
+    <Compile Include="StringPrograms\Upper_String_Method.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
