@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace myfirstproject.OOPSPrograms
 {
-    class AbstractInterface
+    /*class AbstractInterface
     {
         interface IInput
         {
@@ -100,5 +100,5 @@ namespace myfirstproject.OOPSPrograms
             r.Run();
             Console.ReadKey();
         }
-    }
+    }*/
 }

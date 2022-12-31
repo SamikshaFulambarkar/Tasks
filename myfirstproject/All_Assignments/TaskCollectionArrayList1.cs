@@ -266,4 +266,213 @@ namespace myfirstproject.All_Assignments
             Console.ReadKey();
         }
     }
+    class TaskCollectionHashtable11
+    /* 11.	WAP to add elements to a Hashtable and print content of it. Use int as Key and String as Value.
+        In the second Hashtable add elements of String type as Key and Int as Value. */
+    {
+        static void Main(string[] args)
+        {
+            Hashtable ht1 = new Hashtable()
+            {
+                {1, "Pune" },
+                {2, "Mumbai" },
+                {3, "Goa" },
+                {4, "Chennai" },
+                {5, "Hyderabad" },
+                {6, "Banglore" },
+                {7, "Nagpur" }
+            };
+            foreach (DictionaryEntry kv in ht1)
+            {
+                Console.WriteLine(kv.Key + "  " + kv.Value);
+            }
+            Hashtable ht2 = new Hashtable()
+            {
+                {"Pink", 8 },
+                {"Yellow", 9 },
+                {"Green", 10 },
+                {"White", 11 },
+                {"Red", 12 },
+                {"Blue", 13 },
+                {"Indigo", 14 }
+            };
+            foreach (DictionaryEntry kv in ht2)
+            {
+                Console.WriteLine(kv.Key + "  " + kv.Value);
+            }
+            Console.ReadKey();
+        }
+    }
+    class TaskCollectionHashtable12
+    // 12.	WAP to get only the Keys from a Hashtable.
+    {
+        static void Main(string[] args)
+        {
+            Hashtable ht = new Hashtable()
+            {
+                {1, "Pune" },
+                {2, "Mumbai" },
+                {3, "Goa" },
+                {4, "Chennai" },
+                {5, "Hyderabad" },
+                {6, "Banglore" },
+                {7, "Nagpur" }
+            };
+            foreach (DictionaryEntry kv in ht)
+            {
+                Console.WriteLine(kv.Key);
+            }
+            Console.ReadKey();
+        }
+    }
+    class TaskCollectionHashtable13
+    // 13.	WAP to get only the Values from a Hashtable.
+    {
+        static void Main(string[] args)
+        {
+            Hashtable ht = new Hashtable()
+            {
+                {1, "Pune" },
+                {2, "Mumbai" },
+                {3, "Goa" },
+                {4, "Chennai" },
+                {5, "Hyderabad" },
+                {6, "Banglore" },
+                {7, "Nagpur" }
+            };
+            foreach (DictionaryEntry kv in ht)
+            {
+                Console.WriteLine(kv.Value);
+            }
+            Console.ReadKey();
+        }
+    }
+    class TaskCollectionHashtable14
+    // 14.	WAP to create a  Hashtable  using Custom class as key and any other object as value
+    {
+        static void Main(string[] args)
+        {
+
+        }
+    }
+    class TaskCollectionQueue15
+    // WAP to create a Queue to add 5 objects and also remove the first two and iterate over it. 
+    {
+        static void Main(string[] args)
+        {
+            Queue<int> q = new Queue<int>();
+            q.Enqueue(5);
+            q.Enqueue(56);
+            q.Enqueue(89);
+            q.Enqueue(23);
+            q.Enqueue(20);
+            foreach (var x in q)
+            {
+                Console.Write(x+"  ");
+            }
+            q.Dequeue();
+            q.Dequeue();
+            Console.WriteLine("\n......................");
+            foreach (var x in q)
+            {
+                Console.Write(x+"  ");
+            }
+            Console.ReadKey();
+        }
+    }
+    class TaskCollectionStack16
+    // WAP to create a Stack to store some objects and iterate over it.Also show use of push,pop,peek.
+    {
+        static void Main(string[] args)
+        {
+            Stack<string> s = new Stack<string>();
+            s.Push("red");
+            s.Push("green");
+            s.Push("blue");
+            s.Push("White");
+            s.Push("Pink");
+            foreach (var st in s)
+            {
+                Console.WriteLine(st);
+            }
+            Console.WriteLine("..................POP.............");
+            s.Pop();
+            foreach (var st in s)
+            {
+                Console.WriteLine(st);
+            }
+            Console.WriteLine(".............PEEK...........");
+            s.Peek();
+            foreach (var st in s)
+            {
+                Console.WriteLine(st);
+            }
+            Console.ReadKey();
+        }
+    }
+    class Emp17
+    /* WAP to create a List<Emp> and search for Emp object whose Empno=10 and delete all the records 
+     whose dept is same as empno 10. Emp[Emp No, ename, Deptid]  Dept[did, dname] */
+    {
+        public int E_no;
+        public string E_name;
+
+        public Emp17(int E_no, string E_name)
+        {
+            this.E_no = E_no;
+            this.E_name = E_name;
+        }
+    }
+    class Dept17
+    {
+        public int D_id;
+        public string D_name;
+        public List<Emp> ed;
+
+        public Dept17(int D_id, string D_name, List<Emp> ed)
+        {
+            this.D_id = D_id;
+            this.D_name = D_name;
+            this.ed = ed;
+        }
+    }
+    class TaskCollectionCustomEmpList17
+    {
+        static void Main(string[] args)
+        {
+            int num = 10;
+            List<Dept> li = new List<Dept>();
+            for (int i = 1; i <= 3; i++)
+            {
+                Console.WriteLine("Enter Department ID :");
+                int ID = int.Parse(Console.ReadLine());
+                Console.WriteLine("Enter Department Name :");
+                string Name = Console.ReadLine();
+                List<Emp> em = new List<Emp>();
+                Console.WriteLine("Enter the Employee Details :");
+                for (int j = 1; j < 4; j++)
+                {
+                    Console.WriteLine("Enter Employee ID :");
+                    int E_no = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Enter Employee Name :");
+                    string E_name = Console.ReadLine();
+                    em.Add(new Emp(E_no, E_name));
+                }
+                li.Add(new Dept(ID, Name, em));
+            }
+            Console.WriteLine("The Final Data is :");
+            foreach (var d in li)
+            {
+                foreach (var e in d.ed)
+                {
+                    if (e.E_no == num)
+                    {
+                        Console.Write(d.D_id + "  " + d.D_name);
+                        Console.Write("  " + e.E_no + "  " + e.E_name);
+                    }
+                }
+            }
+            Console.ReadKey();
+        }
+    }
 }

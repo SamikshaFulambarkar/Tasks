@@ -110,24 +110,6 @@ namespace myfirstproject.Mini_Project
             if (BookSize != -1)
             {
                 bool result = false;
-                for (int i = 0; i < bookslist.Count; i++)
-                {
-                    if (bookslist[i] != null && bookslist[i].bid == Bookid)
-                    {
-                        Console.WriteLine("Enter new Book ID");
-                        bookslist[i].bid = int.Parse(Console.ReadLine());
-                        result = true;
-                        break;
-                    }
-                }
-                if (result)
-                {
-                    Console.WriteLine("Changed Successfully...");
-                }
-                else
-                {
-                    Console.WriteLine($"{Bookid} is not Present in current book list");
-                }
             }
             else
             {
@@ -385,6 +367,7 @@ namespace myfirstproject.Mini_Project
                                 s.Update4(int.Parse(Console.ReadLine()));
                                 break;
                             case 5:
+                                Console.Write("Enter Book's Id : ");
                                 s.Update5(int.Parse(Console.ReadLine()));
                                 break;
                             case 6:
@@ -400,7 +383,7 @@ namespace myfirstproject.Mini_Project
                         s.Delete(int.Parse(Console.ReadLine()));
                         break;
                     case 5:
-                        Console.WriteLine("Number of Books");
+                        Console.WriteLine("Num of Books For Display");
                         s.Display_all_Data(int.Parse(Console.ReadLine()));
                         break;
                     case 6:
@@ -413,5 +396,4 @@ namespace myfirstproject.Mini_Project
             } while (!ToStop);
         }
     }
-
 }
