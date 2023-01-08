@@ -127,7 +127,7 @@ namespace myfirstproject.All_Assignments
             Console.ReadKey();
         }
     }
-    class AssgnCollectionQ4
+    /*class AssgnCollectionQ4
     {
         class Player
         {
@@ -175,7 +175,7 @@ namespace myfirstproject.All_Assignments
                 Console.WriteLine(kv.Key+"  "+kv.Value);
             }
         }
-    }
+    }*/
     class AssgnCollectionQ5
     {
         static void Main(string[] args)

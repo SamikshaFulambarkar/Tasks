@@ -50,7 +50,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>myfirstproject.All_Assignments.AssgnCollectionQ3</StartupObject>
+    <StartupObject>myfirstproject.All_Assignments.Assgn8JQ8</StartupObject>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup />
@@ -68,6 +68,7 @@
   <ItemGroup>
     <Compile Include="All_Assignments\Assgn.cs" />
     <Compile Include="All_Assignments\Assgn17DQ1.cs" />
+    <Compile Include="All_Assignments\Assgn8JQ1.cs" />
     <Compile Include="All_Assignments\AssgnCollectionQ1.cs" />
     <Compile Include="All_Assignments\AssgnStringQ1.cs" />
     <Compile Include="All_Assignments\Assgn_3_1.cs" />
@@ -112,6 +113,7 @@
     <Compile Include="Loops_Conditional\DemoClass.cs" />
     <Compile Include="Loops_Conditional\Loops.cs" />
     <Compile Include="Loops_Conditional\SwitchCase.cs" />
+    <Compile Include="MidTest\ArrMidTest1.cs" />
     <Compile Include="Mini_Project\Operation.cs" />
     <Compile Include="Mini_Project\Operation2.cs" />
     <Compile Include="OOPSPrograms\Employee.cs" />
