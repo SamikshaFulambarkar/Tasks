@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace myfirstproject.ArrProgram
+namespace myfirstproject.All_Assignments
 {
     class Que1_Arr
     //1.Merging elements of two different arrays alternatively in third array.
@@ -171,7 +171,7 @@ namespace myfirstproject.ArrProgram
             while (count < n)
                 arr[count++] = 0;
         }
-        public static void Main()
+        static void Main(string[] args)
         {
             int[] arr = { 12, 0, 7, 0, 8, 0, 3 };
             int n = arr.Length;

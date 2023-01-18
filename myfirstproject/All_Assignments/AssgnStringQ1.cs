@@ -71,6 +71,7 @@ namespace myfirstproject.All_Assignments
                 i++;
             }
             Console.WriteLine("Number of words in the string : " + count);
+            Console.ReadKey();
         }
     }
     class AssgnStringQ3
@@ -550,4 +551,41 @@ namespace myfirstproject.All_Assignments
             Console.ReadKey();
         }
     }
+    class StringProgram
+    // find the duplicate words and their number of occurrences in a string
+    {
+        static void Main(string[] args)
+        {
+            List<string> li = new List<string>();
+            Console.WriteLine("Enter the size of List :");
+            int s = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the Elements in list :");
+            for (int i = 1; i <= s; i++)
+            {
+                string L = Console.ReadLine();
+                li.Add(L);
+            }
+            Console.WriteLine();
+            bool[] found = new bool[li.Count];
+            for (int i = 0; i < li.Count; i++)
+                found[i] = false;
+            for (int i = 0; i < li.Count; i++)
+            {
+                if (found[i] == true)
+                    continue;
+                int cnt = 1;
+                for (int j = i + 1; j < li.Count; j++)
+                {
+                    if (li[i] == li[j])
+                    {
+                        found[j] = true;
+                        cnt++;
+                    }
+                }
+                Console.WriteLine();
+                Console.WriteLine(li[i] + " is present " + cnt + " times");
+            }
+            Console.ReadKey();
+        }
+    } 
 }

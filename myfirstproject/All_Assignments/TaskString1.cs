@@ -121,7 +121,6 @@ namespace myfirstproject.All_Assignments
                 t[j++] = '\0';
                 count--;
             }
-
             Console.Write(t);
         }
         static void Main(string[] args)
@@ -553,6 +552,32 @@ namespace myfirstproject.All_Assignments
             {
                 Console.Write(str[i] + " ");
             }
+            Console.ReadKey();
+        }
+    }
+    class TaskString23
+        // Sum of integer in string
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter String");
+            String str = Console.ReadLine();
+            string temp = "0";
+            int sum = 0;
+            for(int i=0; i<str.Length; i++)
+            {
+                if(char.IsDigit(str[i]))
+                {
+                    temp = temp + str[i];
+                }
+                else
+                {
+                    sum = sum + int.Parse(temp);
+                    temp = "0";
+                }
+            }
+            int Add = sum + int.Parse(temp);
+            Console.WriteLine("Sum of digits in string = "+Add);
             Console.ReadKey();
         }
     }
