@@ -156,14 +156,8 @@ namespace myfirstproject.All_Assignments
         {
             Console.WriteLine("Enter String :");
             string str = Console.ReadLine();
-            Console.WriteLine("Converted string are:");
-            for (int i = 0; i < str.Length; i++)
-            {
-                if (Char.IsUpper(str[i]))
-                    Console.Write(Char.ToLower(str[i]));
-                else
-                    Console.Write(Char.ToUpper(str[i]));
-            }
+            Console.WriteLine("Uppercase : "+str);
+            Console.WriteLine("Converted to Lowercase : "+str.ToLower());
             Console.ReadKey();
         }
     }
@@ -556,36 +550,100 @@ namespace myfirstproject.All_Assignments
     {
         static void Main(string[] args)
         {
-            List<string> li = new List<string>();
-            Console.WriteLine("Enter the size of List :");
-            int s = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter the Elements in list :");
-            for (int i = 1; i <= s; i++)
-            {
-                string L = Console.ReadLine();
-                li.Add(L);
-            }
-            Console.WriteLine();
-            bool[] found = new bool[li.Count];
-            for (int i = 0; i < li.Count; i++)
-                found[i] = false;
-            for (int i = 0; i < li.Count; i++)
-            {
-                if (found[i] == true)
-                    continue;
-                int cnt = 1;
-                for (int j = i + 1; j < li.Count; j++)
-                {
-                    if (li[i] == li[j])
-                    {
-                        found[j] = true;
-                        cnt++;
-                    }
-                }
-                Console.WriteLine();
-                Console.WriteLine(li[i] + " is present " + cnt + " times");
-            }
+            Console.WriteLine("Enter string :");
+            string str = Console.ReadLine();
+            string[] strArr = str.Split(' ');
+            Console.WriteLine(strArr);
             Console.ReadKey();
         }
     } 
+    class ProgramArr
+        // if number is even add 1point if number is odd add 3ponts in array
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter size of array :");
+            int s = int.Parse(Console.ReadLine());
+            int[] arr = new int[s];
+            Console.WriteLine("Enter Elements");
+            for(int i=0; i<s; i++)
+            {
+                arr[i] = int.Parse(Console.ReadLine());
+            }
+            for(int i=0; i<s; i++)
+            {
+                if(arr[i]%2==0)
+                {
+                    arr[i] = arr[i]+1;
+                }
+                else if(arr[i]%2!=0)
+                {
+                    arr[i] = arr[i]+3;
+                }
+            }
+            Console.WriteLine("Updated Array is :");
+            for(int i=0; i<s; i++)
+            {
+                Console.Write(arr[i]+"  ");
+            }
+            Console.ReadKey();
+        }
+    }
+    class ProgramArr2
+        // swap two numbers in array
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter Size");
+            int s = int.Parse(Console.ReadLine());
+            int[] arr = new int[s];
+            Console.WriteLine("Enter Elements :");
+            for(int i=0; i<s; i++)
+            {
+                arr[i] = int.Parse(Console.ReadLine());
+            }
+            for(int i=0; i<s; i++)
+            {
+                int temp = arr[i];
+                arr[i] = arr[arr.Length-1];
+                arr[arr.Length - 1] = temp;
+                int temp2 = arr[i];
+                arr[i] = arr[arr.Length - 2];
+                arr[arr.Length - 2] = temp2;
+            }
+            Console.WriteLine("Updated Array");
+            for(int i=0; i<s; i++)
+            {
+                Console.Write(arr[i]+"  ");
+            }
+            Console.ReadKey();
+        }
+    }
+    class ProgramArr3
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter Size :");
+            int s = int.Parse(Console.ReadLine());
+            int[] arr1 = new int[s];
+            int[] arr2 = new int[s];
+            Console.WriteLine("Enter Elements in array 1 :");
+            for(int i=0; i<s; i++)
+            {
+                arr1[i] = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("Enter Elements in array 2 :");
+            for (int i = 0; i < s; i++)
+            {
+                arr2[i] = int.Parse(Console.ReadLine());
+            }
+            for(int i=0; i<s; i++)
+            {
+                if(arr1[i]==arr2[i] && arr1[i]%2==0)
+                {
+
+                }
+            }
+        }
+    }
 }

@@ -50,7 +50,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>myfirstproject.All_Assignments.StringProgram</StartupObject>
+    <StartupObject>myfirstproject.All_Assignments.ProgramArr2</StartupObject>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup />
