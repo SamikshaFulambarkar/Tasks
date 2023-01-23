@@ -50,7 +50,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>myfirstproject.All_Assignments.ProgramArr2</StartupObject>
+    <StartupObject>myfirstproject.MidTest.EmpList</StartupObject>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup />
@@ -114,6 +114,7 @@
     <Compile Include="Loops_Conditional\Loops.cs" />
     <Compile Include="Loops_Conditional\SwitchCase.cs" />
     <Compile Include="MidTest\ArrMidTest1.cs" />
+    <Compile Include="MidTest\Mocktest1.cs" />
     <Compile Include="Mini_Project\Operation.cs" />
     <Compile Include="Mini_Project\Operation2.cs" />
     <Compile Include="OOPSPrograms\Employee.cs" />
