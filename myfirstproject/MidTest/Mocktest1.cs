@@ -65,6 +65,7 @@ namespace myfirstproject.MidTest
             Console.ReadKey();
         }
     }
+    // Create a list of employee and increment the salary of those employee whose salary is less than 15000
     class EmpList
     {
         public int ID;
@@ -81,11 +82,11 @@ namespace myfirstproject.MidTest
         static void Main(string[] args)
         {
             List<EmpList> li = new List<EmpList>();
-            li.Add(new EmpList(101, "Ankita", 12000));
-            li.Add(new EmpList(102, "Shreya", 18000));
-            li.Add(new EmpList(103, "Snehal", 11000));
-            li.Add(new EmpList(104, "Pooja", 16000));
-            li.Add(new EmpList(105, "Priyanka", 20000));
+            li.Add(new EmpList(10, "Ankita", 12000));
+            li.Add(new EmpList(20, "Shreya", 18000));
+            li.Add(new EmpList(30, "Snehal", 11000));
+            li.Add(new EmpList(40, "Pooja", 16000));
+            li.Add(new EmpList(50, "Priyanka", 20000));
             foreach(EmpList e in li)
             {
                 if(e.SALARY<15000)
