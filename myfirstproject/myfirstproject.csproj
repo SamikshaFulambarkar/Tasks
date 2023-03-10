@@ -50,7 +50,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>myfirstproject.ADO_Tasks.LoginUser</StartupObject>
+    <StartupObject>myfirstproject.Linq_Programs.LinqDemoProgram</StartupObject>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup />
@@ -118,6 +118,14 @@
     <Compile Include="DelegatesProgram\GenericDelDemo.cs" />
     <Compile Include="ExceptionPrograms\CustomeExceptionDemo.cs" />
     <Compile Include="ExceptionPrograms\ExceptionClass1.cs" />
+    <Compile Include="FileHandeling\Deletefile.cs" />
+    <Compile Include="FileHandeling\EmpSerialization.cs" />
+    <Compile Include="FileHandeling\MyThreadDemo2.cs" />
+    <Compile Include="FileHandeling\ThreadingDemo2.cs" />
+    <Compile Include="FileHandeling\MyThreadDemo.cs" />
+    <Compile Include="FileHandeling\ReadFileDemo.cs" />
+    <Compile Include="FileHandeling\Writefile.cs" />
+    <Compile Include="Linq_Programs\LinqDemoProgram.cs" />
     <Compile Include="Loops_Conditional\AllLoops.cs" />
     <Compile Include="Loops_Conditional\ClassTask.cs" />
     <Compile Include="Loops_Conditional\Condition_Check.cs" />
